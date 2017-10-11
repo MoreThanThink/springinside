@@ -17,7 +17,7 @@ public class UserImpl implements User {
 
     private List<UserDO> users;
 
-    public UserImpl(List<UserDO> users) {
+    public UserImpl() {
         this.users = UsersUtil.getUsers();
     }
 

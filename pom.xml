@@ -21,9 +21,9 @@
         <module>app/model</module>
         <module>app/biz</module>
         <module>app/integration</module>
+        <module>app/dal</module>
         <module>webdocs</module>
         <module>assembly</module>
-        <module>app/springinside-dal</module>
     </modules>
 
     <dependencyManagement>
@@ -50,7 +50,11 @@
                 <artifactId>springinside-integration</artifactId>
                 <version>${spring.inside.version}</version>
             </dependency>
-
+            <dependency>
+                <groupId>com.mydomain</groupId>
+                <artifactId>springinside-dal</artifactId>
+                <version>${spring.inside.version}</version>
+            </dependency>
             <!-- spring -->
             <dependency>
                 <groupId>org.springframework</groupId>

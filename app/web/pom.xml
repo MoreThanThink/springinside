@@ -24,6 +24,10 @@
             <artifactId>servlet-api</artifactId>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+            <groupId>com.mydomain</groupId>
+            <artifactId>springinside-biz</artifactId>
+        </dependency>
     </dependencies>
 
 </project>
