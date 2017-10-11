@@ -23,6 +23,7 @@
         <module>app/integration</module>
         <module>webdocs</module>
         <module>assembly</module>
+        <module>app/springinside-dal</module>
     </modules>
 
     <dependencyManagement>
