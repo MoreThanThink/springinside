@@ -21,9 +21,11 @@ import com.mydomain.springinside.model.UserVO;
 @Controller
 public class IndexController implements BeanFactoryAware {
 
+    /** userManager */
     @Resource
     private UserManager userManager;
 
+    /** beanFactory */
     private BeanFactory beanFactory;
 
     /**
@@ -37,6 +39,12 @@ public class IndexController implements BeanFactoryAware {
         return "<h1>Welcome to Index page !</h1>";
     }
 
+    /**
+     * 获取指定账号的用户
+     *
+     * @param account 账号
+     * @return 用户
+     */
     @RequestMapping("/user")
     @ResponseBody
     public String user(String account) {
@@ -44,6 +52,11 @@ public class IndexController implements BeanFactoryAware {
         return userVO == null ? "no such user" : userVO.toString();
     }
 
+    /**
+     * beanFactory
+     *
+     * @return beanFactory className
+     */
     @RequestMapping("/bf")
     @ResponseBody
     public String bf() {
@@ -51,6 +64,12 @@ public class IndexController implements BeanFactoryAware {
         return className;
     }
 
+    /**
+     * beanFactory setter
+     *
+     * @param beanFactory beanFactory
+     * @throws BeansException ex
+     */
     @Override
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
         this.beanFactory = beanFactory;
