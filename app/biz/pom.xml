@@ -12,20 +12,6 @@
 
     <artifactId>springinside-biz</artifactId>
     <packaging>jar</packaging>
-    <dependencies>
-        <dependency>
-            <groupId>com.mydomain</groupId>
-            <artifactId>springinside-model</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.mydomain</groupId>
-            <artifactId>springinside-dal</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-context</artifactId>
-        </dependency>
-    </dependencies>
 
 
 </project>

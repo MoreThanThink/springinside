@@ -18,10 +18,7 @@
 
     <modules>
         <module>app/web</module>
-        <module>app/model</module>
         <module>app/biz</module>
-        <module>app/integration</module>
-        <module>app/dal</module>
         <module>webdocs</module>
         <module>assembly</module>
     </modules>
